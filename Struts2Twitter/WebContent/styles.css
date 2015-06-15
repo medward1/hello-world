@@ -1,0 +1,53 @@
+#enterTweet
+{
+	float: right;
+}
+
+body
+{
+	background-image: url("memphisSkyline.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.activeLi
+{
+	background-color: #8080ff;
+}
+
+.glyph
+{
+	display: none;
+	float: right;
+	color: red;
+}
+
+.showglyph
+{
+	display: inline;
+	float: right;
+	color: red;
+}
+.delete
+{
+	float: right;
+	display: inline;
+}
+
+#logout
+{
+	display: inline;
+}
+
+#newuser
+{
+	float: right;
+	border: solid;
+	border-color: rgb(239, 226, 226);
+	border-radius: 25px;
+	padding: 25px;
+	margin: 25px;
+	margin-right: 50px;
+}

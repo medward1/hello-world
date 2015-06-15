@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="login" class="com.cooksys.struts2.action.LoginAction">
+			<result name="success">/profile.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="tweet" class="com.cooksys.struts2.action.TweetAction">
+			<result name="success">/newTweet.jsp</result>
+		</action>
+		<action name="loadTweets" class="com.cooksys.struts2.action.LoadTweetsAction">
+			<result name="success">/profile.jsp</result>
+		</action>
+		<action name="delete" class="com.cooksys.struts2.action.TweetAction" method="deleteTweet">
+			<result name="success">/profile.jsp</result>
+		</action>
+		<action name="newuser" class="com.cooksys.struts2.action.NewUserAction">
+			<result name="success">/login.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="logout" class="com.cooksys.struts2.action.LogoutAction">
+			<result name="success">/login.jsp</result>
+		</action>
+	</package>
+</struts>
